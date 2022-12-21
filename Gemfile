@@ -28,7 +28,7 @@ gem 'i18n_alchemy'
 gem "i18n-js", ">= 3.0.0.rc11"
 
 gem 'schema_plus'
-gem 'catarse_settings_db', '>= 0.1.0'
+gem 'catarse_settings_db', '>= 0.1.1'
 
 # Notifications
 gem 'user_notifier', '~> 0.4.0'
@@ -157,8 +157,8 @@ group :test do
   gem 'selenium-webdriver'
 end
 
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 gem 'coffee-rails'
 gem 'compass-rails'
 gem 'uglifier'
-gem 'sprockets'
+gem 'sprockets', '>= 4.2.0'
