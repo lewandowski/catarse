@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.3.1'
 
-gem 'rails', '~> 4.2.7.1'
+gem 'rails', '~> 5.0.0.0'
 
 gem 'protected_attributes'
 gem 'rails-observers'
@@ -28,7 +28,7 @@ gem 'i18n_alchemy'
 gem "i18n-js", ">= 3.0.0.rc11"
 
 gem 'schema_plus'
-gem 'catarse_settings_db', '>= 0.1.0'
+gem 'catarse_settings_db', '>= 0.1.1'
 
 # Notifications
 gem 'user_notifier', '~> 0.4.0'
@@ -39,7 +39,7 @@ gem 'mixpanel_client'
 
 # Payment engines
 
-gem 'catarse_pagarme', '~> 2.10.2'
+gem 'catarse_pagarme', '~> 3.0.0'
 #gem 'catarse_pagarme', path: '../catarse_pagarme'
 
 # Decorators
@@ -55,11 +55,11 @@ gem "cocoon"
 gem 'high_voltage'
 
 # Authentication and Authorization
-gem 'simple_token_authentication', '~> 1.0' # see semver.org
+gem 'simple_token_authentication', '~> 1.14', '>= 1.14.0' # see semver.org
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'koala'
-gem 'devise', '3.5.10'
+gem 'devise', '4.0.0'
 gem 'pundit'
 gem 'json_web_token'
 
@@ -69,7 +69,7 @@ gem 'sendgrid-ruby'
 
 # HTML manipulation and formatting
 gem 'simple_form'
-gem 'mail_form'
+gem 'mail_form', '>= 1.6.0'
 gem "auto_html", "~> 1.6"
 gem 'kaminari'
 gem 'redactor-rails', github: 'catarse/redactor-rails'
@@ -82,8 +82,8 @@ gem "mini_magick"
 gem 'to_xls'
 gem 'ranked-model'
 gem 'feedjira'
-gem 'inherited_resources'
-gem 'has_scope'
+gem 'inherited_resources', '>= 1.7.0'
+gem 'has_scope', '>= 0.7.0'
 gem 'spectator-validates_email',  require: 'validates_email'
 gem 'video_info'
 gem 'typhoeus'
@@ -91,7 +91,7 @@ gem 'parallel'
 gem 'sitemap_generator'
 gem 'rdstation-ruby-client'
 gem 'therubyracer', platform: :ruby
-gem 'responders', '~> 2.0'
+gem 'responders', '~> 2.3', '>= 2.3.0'
 
 # Translations
 gem 'http_accept_language'
@@ -106,7 +106,7 @@ group :production do
 
   # Enabling Gzip on Heroku
   # If you don't use Heroku, please comment the line below.
-  gem 'heroku-deflater', '>= 0.4.1'
+  gem 'heroku-deflater', '>= 0.6.2'
 
   # Make heroku serve static assets and loggin with stdout
   #gem 'rails_on_heroku'
