@@ -28,7 +28,7 @@ gem 'i18n_alchemy'
 gem "i18n-js", ">= 3.0.0.rc11"
 
 gem 'schema_plus'
-gem 'catarse_settings_db', '>= 0.1.0'
+gem 'catarse_settings_db', '>= 0.1.1'
 
 # Notifications
 gem 'user_notifier', '~> 0.4.0'
@@ -55,7 +55,7 @@ gem "cocoon"
 gem 'high_voltage'
 
 # Authentication and Authorization
-gem 'simple_token_authentication', '~> 1.0' # see semver.org
+gem 'simple_token_authentication', '~> 1.14', '>= 1.14.0' # see semver.org
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'koala'
@@ -91,7 +91,7 @@ gem 'parallel'
 gem 'sitemap_generator'
 gem 'rdstation-ruby-client'
 gem 'therubyracer', platform: :ruby
-gem 'responders', '~> 2.0'
+gem 'responders', '~> 2.3', '>= 2.3.0'
 
 # Translations
 gem 'http_accept_language'
