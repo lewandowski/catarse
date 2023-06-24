@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.3.1'
 
-gem 'rails', '~> 4.2.7.1'
+gem 'rails', '~> 4.2.8.0'
 
 gem 'protected_attributes'
 gem 'rails-observers'
@@ -71,7 +71,7 @@ gem 'sendgrid-ruby'
 gem 'simple_form'
 gem 'mail_form'
 gem "auto_html", "~> 1.6"
-gem 'kaminari'
+gem 'kaminari', '>= 1.0.0'
 gem 'redactor-rails', github: 'catarse/redactor-rails'
 
 # Uploads
