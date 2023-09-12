@@ -8,7 +8,7 @@ gem 'protected_attributes'
 gem 'rails-observers'
 gem 'rb-readline'
 
-gem 'sidekiq',  '~> 4.0.1'
+gem 'sidekiq', '~> 7.1.3'
 
 # Turns every field on a editable one
 gem "best_in_place", :git => "git://github.com/bernat/best_in_place", ref: "ee95961e639022e6aa528704b8cb4789596ea61b"
@@ -39,7 +39,7 @@ gem 'mixpanel_client'
 
 # Payment engines
 
-gem 'catarse_pagarme', '~> 2.10.2'
+gem 'catarse_pagarme', '~> 2.10.4'
 #gem 'catarse_pagarme', path: '../catarse_pagarme'
 
 # Decorators
