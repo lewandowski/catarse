@@ -82,7 +82,7 @@ gem "mini_magick"
 gem 'to_xls'
 gem 'ranked-model'
 gem 'feedjira'
-gem 'inherited_resources'
+gem 'inherited_resources', '>= 1.14.0'
 gem 'has_scope'
 gem 'spectator-validates_email',  require: 'validates_email'
 gem 'video_info'
