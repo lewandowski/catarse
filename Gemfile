@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.3.1'
 
-gem 'rails', '~> 4.2.7.1'
+gem 'rails', '~> 7.0.0.0'
 
 gem 'protected_attributes'
 gem 'rails-observers'
@@ -39,7 +39,7 @@ gem 'mixpanel_client'
 
 # Payment engines
 
-gem 'catarse_pagarme', '~> 2.10.2'
+gem 'catarse_pagarme', '~> 3.0.0'
 #gem 'catarse_pagarme', path: '../catarse_pagarme'
 
 # Decorators
@@ -47,7 +47,7 @@ gem 'draper'
 gem "sentry-raven"
 
 # Frontend stuff
-gem 'slim-rails'
+gem 'slim-rails', '>= 3.1.2'
 gem 'browser', "1.0.1"
 gem "cocoon"
 
@@ -55,7 +55,7 @@ gem "cocoon"
 gem 'high_voltage'
 
 # Authentication and Authorization
-gem 'simple_token_authentication', '~> 1.0' # see semver.org
+gem 'simple_token_authentication', '~> 1.18', '>= 1.18.0' # see semver.org
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'koala'
@@ -82,7 +82,7 @@ gem "mini_magick"
 gem 'to_xls'
 gem 'ranked-model'
 gem 'feedjira'
-gem 'inherited_resources'
+gem 'inherited_resources', '>= 1.14.0'
 gem 'has_scope'
 gem 'spectator-validates_email',  require: 'validates_email'
 gem 'video_info'
@@ -124,7 +124,7 @@ group :production do
   #gem 'dalli'
 end
 group :development do
-  gem 'web-console'
+  gem 'web-console', '>= 3.3.1'
   gem "rails-erd"
   gem "letter_opener"
   gem 'foreman'
@@ -137,12 +137,12 @@ group :development do
 end
 
 group :test, :development do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.6.0'
   gem 'rspec-mocks'
   gem 'rspec-its'
   gem 'rspec-collection_matchers'
   gem 'pry'
-  gem 'jasmine-rails'
+  gem 'jasmine-rails', '>= 0.14.2'
 end
 
 group :test do
@@ -157,8 +157,8 @@ group :test do
   gem 'selenium-webdriver'
 end
 
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 gem 'coffee-rails'
-gem 'compass-rails'
+gem 'compass-rails', '>= 3.1.0'
 gem 'uglifier'
 gem 'sprockets'
