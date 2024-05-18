@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 
 ruby '2.3.1'
 
-gem 'rails', '~> 4.2.7.1'
+gem 'rails', '~> 4.2.8.0'
 
 gem 'protected_attributes'
-gem 'rails-observers'
+gem 'rails-observers', '>= 0.1.4'
 gem 'rb-readline'
 
 gem 'sidekiq',  '~> 4.0.1'
@@ -15,7 +15,7 @@ gem "best_in_place", :git => "git://github.com/bernat/best_in_place", ref: "ee95
 
 # State machine for attributes on models
 # @TODO move payment to statesman
-gem 'state_machines-activerecord'
+gem 'state_machines-activerecord', '>= 0.4.1'
 gem 'statesman'
 
 # Database and data related
@@ -39,15 +39,15 @@ gem 'mixpanel_client'
 
 # Payment engines
 
-gem 'catarse_pagarme', '~> 2.10.2'
+gem 'catarse_pagarme', '~> 2.10.4'
 #gem 'catarse_pagarme', path: '../catarse_pagarme'
 
 # Decorators
-gem 'draper'
+gem 'draper', '>= 3.1.0'
 gem "sentry-raven"
 
 # Frontend stuff
-gem 'slim-rails'
+gem 'slim-rails', '>= 3.1.2'
 gem 'browser', "1.0.1"
 gem "cocoon"
 
@@ -68,8 +68,8 @@ gem 'gridhook'
 gem 'sendgrid-ruby'
 
 # HTML manipulation and formatting
-gem 'simple_form'
-gem 'mail_form'
+gem 'simple_form', '>= 4.0.0'
+gem 'mail_form', '>= 1.8.0'
 gem "auto_html", "~> 1.6"
 gem 'kaminari'
 gem 'redactor-rails', github: 'catarse/redactor-rails'
@@ -82,9 +82,9 @@ gem "mini_magick"
 gem 'to_xls'
 gem 'ranked-model'
 gem 'feedjira'
-gem 'inherited_resources'
-gem 'has_scope'
-gem 'spectator-validates_email',  require: 'validates_email'
+gem 'inherited_resources', '>= 1.7.0'
+gem 'has_scope', '>= 0.7.2'
+gem 'spectator-validates_email', '>= 1.0.0', require: 'validates_email'
 gem 'video_info'
 gem 'typhoeus'
 gem 'parallel'
@@ -95,7 +95,7 @@ gem 'responders', '~> 2.0'
 
 # Translations
 gem 'http_accept_language'
-gem 'routing-filter', '~> 0.6.0'
+gem 'routing-filter', '~> 0.6.3'
 
 group :production do
   # Gem used to handle image uploading
@@ -124,7 +124,7 @@ group :production do
   #gem 'dalli'
 end
 group :development do
-  gem 'web-console'
+  gem 'web-console', '>= 3.3.1'
   gem "rails-erd"
   gem "letter_opener"
   gem 'foreman'
@@ -137,7 +137,7 @@ group :development do
 end
 
 group :test, :development do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.6.0'
   gem 'rspec-mocks'
   gem 'rspec-its'
   gem 'rspec-collection_matchers'
@@ -157,7 +157,7 @@ group :test do
   gem 'selenium-webdriver'
 end
 
-gem 'sass-rails'
+gem 'sass-rails', '>= 5.0.7'
 gem 'coffee-rails'
 gem 'compass-rails'
 gem 'uglifier'
