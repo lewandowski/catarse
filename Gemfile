@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.3.1'
 
-gem 'rails', '~> 4.2.7.1'
+gem 'rails', '~> 7.0.0.0'
 
 gem 'protected_attributes'
 gem 'rails-observers'
@@ -21,7 +21,7 @@ gem 'statesman'
 # Database and data related
 gem 'pg', '0.19.0'
 gem 'dbhero', '>= 1.1.12'
-gem 'postgres-copy'
+gem 'postgres-copy', '>= 1.6.0'
 gem 'postgres_ext'
 gem 'pg_search'
 gem 'i18n_alchemy'
