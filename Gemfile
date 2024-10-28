@@ -99,7 +99,7 @@ gem 'routing-filter', '~> 0.6.0'
 
 group :production do
   # Gem used to handle image uploading
-  gem 'fog-aws'
+  gem 'fog-aws', '>= 3.29.0'
 
   # Workers, forks and all that jazz
   gem 'unicorn'
