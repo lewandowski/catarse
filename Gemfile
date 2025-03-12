@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.3.1'
 
-gem 'rails', '~> 4.2.7.1'
+gem 'rails', '~> 7.0.0.0'
 
 gem 'protected_attributes'
 gem 'rails-observers'
@@ -21,7 +21,7 @@ gem 'statesman'
 # Database and data related
 gem 'pg', '0.19.0'
 gem 'dbhero', '>= 1.1.12'
-gem 'postgres-copy'
+gem 'postgres-copy', '>= 1.6.0'
 gem 'postgres_ext'
 gem 'pg_search'
 gem 'i18n_alchemy'
@@ -71,7 +71,7 @@ gem 'sendgrid-ruby'
 gem 'simple_form'
 gem 'mail_form'
 gem "auto_html", "~> 1.6"
-gem 'kaminari'
+gem 'kaminari', '>= 1.0.0'
 gem 'redactor-rails', github: 'catarse/redactor-rails'
 
 # Uploads
@@ -106,7 +106,7 @@ group :production do
 
   # Enabling Gzip on Heroku
   # If you don't use Heroku, please comment the line below.
-  gem 'heroku-deflater', '>= 0.4.1'
+  gem 'heroku-deflater', '>= 0.7.0'
 
   # Make heroku serve static assets and loggin with stdout
   #gem 'rails_on_heroku'
@@ -157,7 +157,7 @@ group :test do
   gem 'selenium-webdriver'
 end
 
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 gem 'coffee-rails'
 gem 'compass-rails'
 gem 'uglifier'
